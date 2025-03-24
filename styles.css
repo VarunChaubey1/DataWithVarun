@@ -193,27 +193,42 @@ body {
 
 .skill-card h3 {
     font-size: 1.3rem;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     color: #333333;
 }
 
-.skill-orb {
-    width: 60px;
-    height: 60px;
-    background: radial-gradient(circle, #d4af37 0%, transparent 70%);
-    border-radius: 50%;
+.progress-circle {
     position: relative;
+    width: 80px;
+    height: 80px;
     margin: 0 auto;
-    box-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
 }
 
-.skill-orb::after {
-    content: attr(data-percentage) '%';
+.progress-ring {
+    transform: rotate(-90deg); /* शुरूआत ऊपर से */
+}
+
+.progress-ring__circle-bg {
+    fill: none;
+    stroke: #e0e0e0; /* बैकग्राउंड सर्कल का कलर */
+    stroke-width: 4;
+}
+
+.progress-ring__circle {
+    fill: none;
+    stroke: url(#gradient); /* ग्रेडिएंट कलर */
+    stroke-width: 4;
+    stroke-linecap: round;
+    transition: stroke-dashoffset 0.5s ease;
+}
+
+.progress-percentage {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
     color: #1a2b5e;
 }
 
@@ -421,13 +436,13 @@ footer {
     }
 
     .hero-content {
-        order: 2; /* टेक्स्ट को नीचे रखता है */
+        order: 2;
         text-align: center;
         margin-bottom: 0;
     }
 
     .hero-visual {
-        order: 1; /* इमेज को ऊपर रखता है */
+        order: 1;
         margin-bottom: 20px;
     }
 
