@@ -417,11 +417,18 @@ footer {
     .hero-container {
         flex-direction: column;
         text-align: center;
+        padding: 20px;
     }
 
     .hero-content {
+        order: 2; /* टेक्स्ट को नीचे रखता है */
         text-align: center;
-        margin-bottom: 40px;
+        margin-bottom: 0;
+    }
+
+    .hero-visual {
+        order: 1; /* इमेज को ऊपर रखता है */
+        margin-bottom: 20px;
     }
 
     .profile-photo {
