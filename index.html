@@ -9,6 +9,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
+    <!-- Gradient Definition for Progress Bars -->
+    <svg style="position: absolute; width: 0; height: 0;">
+        <defs>
+            <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#d4af37;" />
+                <stop offset="100%" style="stop-color:#1a2b5e;" />
+            </linearGradient>
+        </defs>
+    </svg>
+
     <!-- Navbar -->
     <nav class="navbar">
         <div class="logo">Varun Chaubey</div>
@@ -51,35 +61,83 @@
         <div class="skills-grid">
             <div class="skill-card">
                 <i class="fas fa-table"></i><h3>Excel</h3>
-                <div class="skill-orb" data-percentage="92"></div>
+                <div class="progress-circle" data-percentage="92">
+                    <svg class="progress-ring" width="80" height="80">
+                        <circle class="progress-ring__circle-bg" cx="40" cy="40" r="36"></circle>
+                        <circle class="progress-ring__circle" cx="40" cy="40" r="36"></circle>
+                    </svg>
+                    <span class="progress-percentage">92%</span>
+                </div>
             </div>
             <div class="skill-card">
                 <i class="fas fa-chart-bar"></i><h3>Power BI</h3>
-                <div class="skill-orb" data-percentage="87"></div>
+                <div class="progress-circle" data-percentage="87">
+                    <svg class="progress-ring" width="80" height="80">
+                        <circle class="progress-ring__circle-bg" cx="40" cy="40" r="36"></circle>
+                        <circle class="progress-ring__circle" cx="40" cy="40" r="36"></circle>
+                    </svg>
+                    <span class="progress-percentage">87%</span>
+                </div>
             </div>
             <div class="skill-card">
                 <i class="fas fa-cloud"></i><h3>Power BI Service</h3>
-                <div class="skill-orb" data-percentage="85"></div>
+                <div class="progress-circle" data-percentage="85">
+                    <svg class="progress-ring" width="80" height="80">
+                        <circle class="progress-ring__circle-bg" cx="40" cy="40" r="36"></circle>
+                        <circle class="progress-ring__circle" cx="40" cy="40" r="36"></circle>
+                    </svg>
+                    <span class="progress-percentage">85%</span>
+                </div>
             </div>
             <div class="skill-card">
                 <i class="fab fa-python"></i><h3>Python</h3>
-                <div class="skill-orb" data-percentage="85"></div>
+                <div class="progress-circle" data-percentage="85">
+                    <svg class="progress-ring" width="80" height="80">
+                        <circle class="progress-ring__circle-bg" cx="40" cy="40" r="36"></circle>
+                        <circle class="progress-ring__circle" cx="40" cy="40" r="36"></circle>
+                    </svg>
+                    <span class="progress-percentage">85%</span>
+                </div>
             </div>
             <div class="skill-card">
                 <i class="fas fa-eye"></i><h3>Looker Studio</h3>
-                <div class="skill-orb" data-percentage="80"></div>
+                <div class="progress-circle" data-percentage="80">
+                    <svg class="progress-ring" width="80" height="80">
+                        <circle class="progress-ring__circle-bg" cx="40" cy="40" r="36"></circle>
+                        <circle class="progress-ring__circle" cx="40" cy="40" r="36"></circle>
+                    </svg>
+                    <span class="progress-percentage">80%</span>
+                </div>
             </div>
             <div class="skill-card">
                 <i class="fas fa-database"></i><h3>SQL</h3>
-                <div class="skill-orb" data-percentage="90"></div>
+                <div class="progress-circle" data-percentage="90">
+                    <svg class="progress-ring" width="80" height="80">
+                        <circle class="progress-ring__circle-bg" cx="40" cy="40" r="36"></circle>
+                        <circle class="progress-ring__circle" cx="40" cy="40" r="36"></circle>
+                    </svg>
+                    <span class="progress-percentage">90%</span>
+                </div>
             </div>
             <div class="skill-card">
                 <i class="fas fa-chart-pie"></i><h3>Tableau</h3>
-                <div class="skill-orb" data-percentage="75"></div>
+                <div class="progress-circle" data-percentage="75">
+                    <svg class="progress-ring" width="80" height="80">
+                        <circle class="progress-ring__circle-bg" cx="40" cy="40" r="36"></circle>
+                        <circle class="progress-ring__circle" cx="40" cy="40" r="36"></circle>
+                    </svg>
+                    <span class="progress-percentage">75%</span>
+                </div>
             </div>
             <div class="skill-card">
                 <i class="fas fa-link"></i><h3>API Integration</h3>
-                <div class="skill-orb" data-percentage="75"></div>
+                <div class="progress-circle" data-percentage="75">
+                    <svg class="progress-ring" width="80" height="80">
+                        <circle class="progress-ring__circle-bg" cx="40" cy="40" r="36"></circle>
+                        <circle class="progress-ring__circle" cx="40" cy="40" r="36"></circle>
+                    </svg>
+                    <span class="progress-percentage">75%</span>
+                </div>
             </div>
         </div>
     </section>
@@ -132,7 +190,7 @@
             <div class="cert-card">
                 <img src="sql-cert-thumbnail.jpg" alt="SQL Certification">
                 <h3>SQL Certification</h3>
-                <a href="https://drive.google.com/file/d/1mmmX_WyhMiKnbiKjxKFLEnJ6m76ABvb8/view?usp=sharing" target="_blank" class="btn">View</a>
+                <a href="https://example.com/sql-cert" target="_blank" class="btn">View</a>
             </div>
         </div>
     </section>
@@ -190,7 +248,11 @@
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
     <script>
+        // Register ScrollTrigger
+        gsap.registerPlugin(ScrollTrigger);
+
         // Navbar Toggle
         const hamburger = document.querySelector('.hamburger');
         const navLinks = document.querySelector('.nav-links');
@@ -207,6 +269,29 @@
         gsap.from('.button-container', { opacity: 0, y: 50, duration: 1, delay: 1.1 });
         gsap.from('.profile-photo', { opacity: 0, scale: 0, duration: 1.5, delay: 1.3, ease: 'back.out(1.7)' });
 
+        // Progress Circle Animation
+        document.querySelectorAll('.progress-circle').forEach(circle => {
+            const percentage = circle.getAttribute('data-percentage');
+            const ring = circle.querySelector('.progress-ring__circle');
+            const circumference = 2 * Math.PI * 36; // r=36 से परिधि
+
+            // सर्कल की शुरुआत 0 से
+            ring.style.strokeDasharray = `${circumference} ${circumference}`;
+            ring.style.strokeDashoffset = circumference;
+
+            // एनिमेशन
+            gsap.to(ring, {
+                strokeDashoffset: circumference - (percentage / 100) * circumference,
+                duration: 1.5,
+                ease: 'power2.out',
+                scrollTrigger: {
+                    trigger: circle,
+                    start: 'top 80%',
+                    toggleActions: 'play none none reset' // स्क्रॉल करने पर रीसेट हो
+                }
+            });
+        });
+
         // Scroll Animations
         gsap.utils.toArray('.section').forEach(section => {
             gsap.from(section.querySelector('.section-title'), {
@@ -218,12 +303,6 @@
             gsap.from(section.querySelectorAll('.skill-card, .exp-card, .cert-card, .project-card, .contact-grid p'), {
                 opacity: 0,
                 y: 30,
-                duration: 1,
-                stagger: 0.2,
-                scrollTrigger: { trigger: section, start: 'top 80%' }
-            });
-            gsap.from(section.querySelectorAll('.skill-orb'), {
-                scale: 0,
                 duration: 1,
                 stagger: 0.2,
                 scrollTrigger: { trigger: section, start: 'top 80%' }
