@@ -1,545 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang=" soutenir
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Varun Chaubey | Data Analyst</title>
+    <title>Varun Chaubey - Data Analyst | Power BI, SQL, Python</title>
+    <meta name="description" content="Varun Chaubey, a skilled Data Analyst with expertise in Power BI, SQL, Python, and data visualization. Explore my projects and certifications;">
+    <meta name="keywords" content="Varun Chaubey, data analyst, Power BI, SQL, Python, data visualization, business intelligence">
+    <meta name="author" content="Varun Chaubey">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Varun Chaubey - Data Analyst Portfolio">
+    <meta property="og:description" content="Portfolio of Varun Chaubey, a Data Analyst specializing in Power BI, SQL, and Python.">
+    <meta property="og:image" content="https://analystvarun.com//varun-photo.jpg">
+    <meta property="og:url" content="https://analystvarun.com/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Varun Chaubey - Data Analyst Portfolio">
+    <meta name="twitter:description" content="Portfolio of Varun Chaubey, a Data Analyst specializing in Power BI, SQL, and Python.">
+    <meta name="twitter:image" content="https://analystvarun.com//varun-photo.jpg">
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Exo 2', sans-serif;
-            background: #f5f6f5;
-            color: #333333;
-            line-height: 1.6;
-            overflow-x: hidden;
-        }
-
-        .navbar {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 50px;
-            background: #1a2b5e;
-            z-index: 1000;
-        }
-
-        .logo {
-            font-size: 2.2rem;
-            font-weight: 700;
-            color: #d4af37;
-        }
-
-        .nav-links {
-            display: flex;
-            list-style: none;
-        }
-
-        .nav-links li {
-            margin-left: 35px;
-        }
-
-        .nav-links a {
-            color: #ffffff;
-            text-decoration: none;
-            font-weight: 400;
-            transition: color 0.3s ease;
-        }
-
-        .nav-links a:hover {
-            color: #d4af37;
-        }
-
-        .hamburger {
-            display: none;
-            flex-direction: column;
-            cursor: pointer;
-        }
-
-        .hamburger span {
-            width: 30px;
-            height: 4px;
-            background: #d4af37;
-            margin: 5px 0;
-            transition: all 0.3s ease;
-        }
-
-        .section {
-            padding: 120px 20px;
-            text-align: center;
-            position: relative;
-            opacity: 1;
-        }
-
-        .hero {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: #ffffff;
-        }
-
-        .hero-container {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            max-width: 1200px;
-            width: 100%;
-            padding: 0 20px;
-        }
-
-        .hero-content {
-            max-width: 600px;
-            text-align: left;
-        }
-
-        .hero-content h1 {
-            font-size: 4rem;
-            font-weight: 700;
-            color: #1a2b5e;
-        }
-
-        .tagline {
-            font-size: 1.8rem;
-            color: #d4af37;
-            margin: 15px 0;
-        }
-
-        .intro-text {
-            font-size: 1.2rem;
-            color: #666666;
-            margin-bottom: 30px;
-        }
-
-        .button-container {
-            display: flex;
-            gap: 20px;
-        }
-
-        .btn {
-            padding: 14px 30px;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: 600;
-            transition: all 0.3s ease;
-        }
-
-        .primary-btn {
-            background: #d4af37;
-            color: #1a2b5e;
-        }
-
-        .primary-btn:hover {
-            background: #b8932d;
-            box-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
-        }
-
-        .secondary-btn {
-            background: transparent;
-            border: 2px solid #1a2b5e;
-            color: #1a2b5e;
-        }
-
-        .secondary-btn:hover {
-            background: #1a2b5e;
-            color: #ffffff;
-            box-shadow: 0 0 10px rgba(26, 43, 94, 0.5);
-        }
-
-        .hero-visual {
-            position: relative;
-        }
-
-        .profile-photo {
-            width: 350px;
-            height: 350px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 5px solid #d4af37;
-            box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
-        }
-
-        .section-title {
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: #1a2b5e;
-            margin-bottom: 50px;
-            position: sticky; /* टाइटल को ऊपर फिक्स्ड रखने के लिए */
-            top: 80px; /* नेवबार के नीचे */
-            background: #f5f6f5; /* बैकग्राउंड मैच करने के लिए */
-            padding: 10px 0;
-            z-index: 500;
-            opacity: 1;
-            transition: color 0.3s ease;
-        }
-
-        .section-title.active {
-            color: #d4af37; /* हाइलाइट होने पर */
-        }
-
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 25px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .skill-card {
-            background: #ffffff;
-            padding: 25px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            opacity: 1;
-        }
-
-        .skill-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-        }
-
-        .skill-card i {
-            font-size: 2.5rem;
-            color: #1a2b5e;
-            margin-bottom: 15px;
-        }
-
-        .skill-card h3 {
-            font-size: 1.3rem;
-            margin-bottom: 15px;
-            color: #333333;
-        }
-
-        .progress-circle {
-            position: relative;
-            width: 80px;
-            height: 80px;
-            margin: 0 auto;
-        }
-
-        .progress-ring {
-            width: 100%;
-            height: 100%;
-            transform: rotate(-90deg);
-        }
-
-        .progress-ring__circle-bg {
-            fill: none;
-            stroke: #e0e0e0;
-            stroke-width: 4;
-        }
-
-        .progress-ring__circle {
-            fill: none;
-            stroke: url(#gradient);
-            stroke-width: 4;
-            stroke-linecap: round;
-            transition: stroke-dashoffset 0.5s ease;
-        }
-
-        .progress-percentage {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 1.2rem;
-            font-weight: 600;
-            color: #1a2b5e;
-        }
-
-        .timeline {
-            max-width: 900px;
-            margin: 0 auto;
-            text-align: left;
-        }
-
-        .exp-card {
-            background: #ffffff;
-            padding: 30px;
-            margin-bottom: 25px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-            opacity: 1;
-        }
-
-        .exp-card:hover {
-            transform: translateX(10px);
-        }
-
-        .exp-card h3 {
-            font-size: 1.8rem;
-            color: #1a2b5e;
-        }
-
-        .company {
-            font-size: 1.1rem;
-            color: #666666;
-            margin-bottom: 15px;
-        }
-
-        .exp-card ul {
-            list-style: none;
-        }
-
-        .exp-card ul li {
-            font-size: 1rem;
-            margin: 10px 0;
-            position: relative;
-            padding-left: 25px;
-        }
-
-        .exp-card ul li::before {
-            content: '➤';
-            color: #d4af37;
-            position: absolute;
-            left: 0;
-        }
-
-        .cert-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 25px;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-
-        .cert-card {
-            background: #ffffff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-            opacity: 1;
-        }
-
-        .cert-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .cert-card img {
-            width: 100%;
-            height: 180px;
-            object-fit: cover;
-            border-radius: 5px;
-            margin-bottom: 15px;
-        }
-
-        .cert-card h3 {
-            font-size: 1.3rem;
-            color: #1a2b5e;
-        }
-
-        .project-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 25px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .project-card {
-            background: #ffffff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-            opacity: 1;
-        }
-
-        .project-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .project-card img {
-            width: 100%;
-            height: 180px;
-            object-fit: cover;
-            border-radius: 5px;
-            margin-bottom: 15px;
-        }
-
-        .project-card h3 {
-            font-size: 1.3rem;
-            color: #1a2b5e;
-        }
-
-        .contact-grid {
-            max-width: 600px;
-            margin: 0 auto;
-            text-align: left;
-        }
-
-        .contact-grid p {
-            font-size: 1.2rem;
-            margin: 20px 0;
-            opacity: 1;
-        }
-
-        .contact-grid i {
-            color: #d4af37;
-            margin-right: 15px;
-        }
-
-        .contact-grid a {
-            color: #1a2b5e;
-            text-decoration: none;
-        }
-
-        .contact-grid a:hover {
-            text-decoration: underline;
-        }
-
-        footer {
-            padding: 30px;
-            background: #1a2b5e;
-            text-align: center;
-            color: #ffffff;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 1024px) {
-            .skills-grid {
-                grid-template-columns: repeat(3, 1fr);
-            }
-
-            .project-grid, .cert-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        @media (max-width: 768px) {
-            .navbar {
-                padding: 20px;
-            }
-
-            .hamburger {
-                display: flex;
-            }
-
-            .nav-links {
-                display: none;
-                flex-direction: column;
-                position: absolute;
-                top: 70px;
-                left: 0;
-                width: 100%;
-                background: #1a2b5e;
-                padding: 20px 0;
-            }
-
-            .nav-links.active {
-                display: flex;
-            }
-
-            .nav-links li {
-                margin: 15px 0;
-            }
-
-            .hamburger.open span:nth-child(1) {
-                transform: rotate(45deg) translate(5px, 5px);
-            }
-
-            .hamburger.open span:nth-child(2) {
-                opacity: 0;
-            }
-
-            .hamburger.open span:nth-child(3) {
-                transform: rotate(-45deg) translate(7px, -7px);
-            }
-
-            .hero-container {
-                flex-direction: column;
-                text-align: center;
-                padding: 20px;
-            }
-
-            .hero-content {
-                order: 2;
-                text-align: center;
-                margin-bottom: 0;
-            }
-
-            .hero-visual {
-                order: 1;
-                margin-bottom: 20px;
-            }
-
-            .profile-photo {
-                width: 250px;
-                height: 250px;
-            }
-
-            .skills-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .progress-circle {
-                width: 60px;
-                height: 60px;
-            }
-
-            .progress-ring {
-                width: 60px;
-                height: 60px;
-            }
-
-            .progress-percentage {
-                font-size: 1rem;
-            }
-
-            .section-title {
-                top: 70px; /* मोबाइल के लिए नेवबार के नीचे */
-            }
-        }
-
-        @media (max-width: 480px) {
-            .hero-content h1 {
-                font-size: 2.5rem;
-            }
-
-            .section-title {
-                font-size: 2rem;
-            }
-
-            .skills-grid, .project-grid, .cert-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .profile-photo {
-                width: 200px;
-                height: 200px;
-            }
-
-            .btn {
-                padding: 12px 25px;
-            }
-
-            .progress-circle {
-                width: 50px;
-                height: 50px;
-            }
-
-            .progress-ring {
-                width: 50px;
-                height: 50px;
-            }
-
-            .progress-percentage {
-                font-size: 0.9rem;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
     <!-- Gradient Definition for Progress Bars -->
@@ -583,7 +65,7 @@
                 </div>
             </div>
             <div class="hero-visual">
-                <img src="varun-photo.jpg" alt="Varun Chaubey" class="profile-photo">
+                <img src="varun-photo.jpg" alt="Varun Chaubey - Data Analyst Profile Photo" class="profile-photo" loading="lazy">
             </div>
         </div>
     </section>
@@ -680,14 +162,6 @@
         <h2 class="section-title">Work Experience</h2>
         <div class="timeline">
             <div class="exp-card">
-                <h3>Power BI Developer</h3>
-                <p class="company">Channel Play Pvt Ltd | Feb 2025 – Present</p>
-                <ul>
-                    <li>Engineered dashboards, boosting efficiency by 30%.</li>
-                    <li>Harnessed DAX for real-time analytics.</li>
-                </ul>
-            </div>
-            <div class="exp-card">
                 <h3>BI Analyst</h3>
                 <p class="company">Adglobal360 India Pvt. Ltd. | Apr 2024 – Jan 2025</p>
                 <ul>
@@ -711,17 +185,17 @@
         <h2 class="section-title">Certifications</h2>
         <div class="cert-grid">
             <div class="cert-card">
-                <img src="google-analyst-thumbnail.jpg" alt="Google Analyst">
+                <img src="google-analyst-thumbnail.jpg" alt="Google Analyst Certification" loading="lazy">
                 <h3>Google Analyst</h3>
                 <a href="https://skillshop.credential.net/675fb475-adcf-40eb-a0dc-900c45d6bec4#acc.aqnY9oMy" target="_blank" class="btn">View</a>
             </div>
             <div class="cert-card">
-                <img src="powerbi-masterclass-thumbnail.jpg" alt="Power BI Master Class">
+                <img src="powerbi-masterclass-thumbnail.jpg" alt="Power BI Master Class Certification" loading="lazy">
                 <h3>Power BI Master Class</h3>
                 <a href="https://drive.google.com/file/d/1brUVNXedj6sE9QWaFm1Znv36HJojIgii/view?usp=sharing" target="_blank" class="btn">View</a>
             </div>
             <div class="cert-card">
-                <img src="sql-cert-thumbnail.jpg" alt="SQL Certification">
+                <img src="sql-cert-thumbnail.jpg" alt="SQL Certification" loading="lazy">
                 <h3>SQL Certification</h3>
                 <a href="https://example.com/sql-cert" target="_blank" class="btn">View</a>
             </div>
@@ -733,32 +207,32 @@
         <h2 class="section-title">Projects</h2>
         <div class="project-grid">
             <div class="project-card">
-                <img src="ola-thumbnail.jpg" alt="OLA Project">
+                <img src="ola-thumbnail.jpg" alt="OLA Ride Analysis Project" loading="lazy">
                 <h3>OLA Ride Analysis</h3>
                 <a href="https://app.powerbi.com/view?r=eyJrIjoiMDQzNDlmZjgtZjZjYi00M2UzLWI1ZDEtMmZjZDFkYTMxYWFhIiwidCI6ImYzMjM4N2U3LTY3NWMtNDZjNS05MTZjLWNlNTNiMzIwMzU0ZiIsImMiOjEwfQ%3D%3D" target="_blank" class="btn">Launch</a>
             </div>
             <div class="project-card">
-                <img src="blinkit-thumbnail.jpg" alt="Blinkit Project">
+                <img src="blinkit-thumbnail.jpg" alt="Blinkit Dashboard Project" loading="lazy">
                 <h3>Blinkit Dashboard</h3>
                 <a href="https://app.powerbi.com/view?r=eyJrIjoiMjk0YWM1ZjctNWE5My00OWM2LTg1MjQtMTAwMDBkNmU0MDI5IiwidCI6ImYzMjM4N2U3LTY3NWMtNDZjNS05MTZjLWNlNTNiMzIwMzU0ZiIsImMiOjEwfQ%3D%3D" target="_blank" class="btn">Launch</a>
             </div>
             <div class="project-card">
-                <img src="zomato-thumbnail.jpg" alt="Zomato Project">
+                <img src="zomato-thumbnail.jpg" alt="Zomato Analysis Project" loading="lazy">
                 <h3>Zomato Analysis</h3>
                 <a href="https://app.powerbi.com/view?r=eyJrIjoiMDBiMzA2NWItNjE5My00NWRmLWIxZmMtOThiMGRhNjJkZTY0IiwidCI6ImYzMjM4N2U3LTY3NWMtNDZjNS05MTZjLWNlNTNiMzIwMzU0ZiIsImMiOjEwfQ%3D%3D" target="_blank" class="btn">Launch</a>
             </div>
             <div class="project-card">
-                <img src="election-thumbnail.jpg" alt="Election Dashboard">
+                <img src="election-thumbnail.jpg" alt="Election Dashboard Project" loading="lazy">
                 <h3>Election Dashboard</h3>
                 <a href="https://app.powerbi.com/view?r=eyJrIjoiZDgxYTcyNjQtNDI3Yi00OWJiLTlhZjgtYjIwOWFlZGY4Y2JhIiwidCI6ImYzMjM4N2U3LTY3NWMtNDZjNS05MTZjLWNlNTNiMzIwMzU0ZiIsImMiOjEwfQ%3D%3D" target="_blank" class="btn">Launch</a>
             </div>
             <div class="project-card">
-                <img src="atm-thumbnail.jpg" alt="ATM Transaction">
+                <img src="atm-thumbnail.jpg" alt="ATM Transaction Analysis Project" loading="lazy">
                 <h3>ATM Analysis</h3>
                 <a href="https://app.powerbi.com/view?r=eyJrIjoiZGRlMDNkNjItZTg2Mi00ZjQyLTk5MjgtM2FmYTAwNWNhNTJjIiwidCI6ImYzMjM4N2U3LTY3NWMtNDZjNS05MTZjLWNlNTNiMzIwMzU0ZiIsImMiOjEwfQ%3D%3D" target="_blank" class="btn">Launch</a>
             </div>
             <div class="project-card">
-                <img src="ipl-thumbnail.jpg" alt="IPL Project">
+                <img src="ipl-thumbnail.jpg" alt="IPL Dashboard Project" loading="lazy">
                 <h3>IPL Dashboard</h3>
                 <a href="https://app.powerbi.com/view?r=eyJrIjoiZWYwZWIwMjgtZTE5YS00ZTEyLThhYjUtMDMyMjk0ZjY2YzRjIiwidCI6ImYzMjM4N2U3LTY3NWMtNDZjNS05MTZjLWNlNTNiMzIwMzU0ZiIsImMiOjEwfQ%3D%3D" target="_blank" class="btn">Launch</a>
             </div>
@@ -785,10 +259,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollToPlugin.min.js"></script>
     <script>
-        // Register Plugins
         gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
-        // Navbar Toggle
         const hamburger = document.querySelector('.hamburger');
         const navLinks = document.querySelector('.nav-links');
         hamburger.addEventListener('click', () => {
@@ -796,7 +268,6 @@
             hamburger.classList.toggle('open');
         });
 
-        // Initial Animations
         gsap.from('.navbar', { y: -100, duration: 1, ease: 'power3.out' });
         gsap.from('.hero-content h1', { opacity: 0, x: -100, duration: 1, delay: 0.5 });
         gsap.from('.tagline', { opacity: 0, x: -50, duration: 1, delay: 0.7 });
@@ -804,96 +275,63 @@
         gsap.from('.button-container', { opacity: 0, y: 50, duration: 1, delay: 1.1 });
         gsap.from('.profile-photo', { opacity: 0, scale: 0, duration: 1.5, delay: 1.3, ease: 'back.out(1.7)' });
 
-        // Progress Circle Animation
         document.querySelectorAll('.progress-circle').forEach(circle => {
             const percentage = circle.getAttribute('data-percentage');
             const ring = circle.querySelector('.progress-ring__circle');
             const circumference = 2 * Math.PI * 36;
-
             ring.style.strokeDasharray = `${circumference} ${circumference}`;
             ring.style.strokeDashoffset = circumference;
-
             gsap.to(ring, {
                 strokeDashoffset: circumference - (percentage / 100) * circumference,
                 duration: 1.5,
                 ease: 'power2.out',
-                scrollTrigger: { 
-                    trigger: circle, 
-                    start: 'top 80%', 
-                    immediateRender: true 
-                }
+                scrollTrigger: { trigger: circle, start: 'top 80%' }
             });
         });
 
-        // Scroll Animations with Sticky Title Highlight
         gsap.utils.toArray('.section').forEach(section => {
             const title = section.querySelector('.section-title');
-
-            // Initial Animation for Title
             gsap.from(title, {
                 opacity: 0,
                 y: 50,
                 duration: 1,
-                scrollTrigger: { 
-                    trigger: section, 
-                    start: 'top 80%', 
-                    immediateRender: true 
-                }
+                scrollTrigger: { trigger: section, start: 'top 80%' }
             });
-
-            // Highlight Title when section is in view
             ScrollTrigger.create({
                 trigger: section,
-                start: 'top 80px', // नेवबार के नीचे शुरू
-                end: 'bottom 80px', // सेक्शन खत्म होने तक
+                start: 'top 80px',
+                end: 'bottom 80px',
                 onEnter: () => title.classList.add('active'),
                 onLeave: () => title.classList.remove('active'),
                 onEnterBack: () => title.classList.add('active'),
                 onLeaveBack: () => title.classList.remove('active')
             });
-
-            // Card Animations
             gsap.from(section.querySelectorAll('.skill-card, .exp-card, .cert-card, .project-card, .contact-grid p'), {
                 opacity: 0,
                 y: 30,
                 duration: 1,
                 stagger: 0.2,
-                scrollTrigger: { 
-                    trigger: section, 
-                    start: 'top 80%', 
-                    immediateRender: true 
-                }
+                scrollTrigger: { trigger: section, start: 'top 80%' }
             });
         });
 
-        // Smooth Scroll for Hash Links
         document.addEventListener('DOMContentLoaded', () => {
             if (window.location.hash) {
                 const target = document.querySelector(window.location.hash);
                 if (target) {
-                    gsap.to(window, { 
-                        duration: 1, 
-                        scrollTo: { y: target, offsetY: 100 }, // टाइटल के लिए जगह
-                        ease: 'power2.out' 
-                    });
+                    gsap.to(window, { duration: 1, scrollTo: { y: target, offsetY: 100 }, ease: 'power2.out' });
                 }
             }
-
             document.querySelectorAll('.nav-links a').forEach(link => {
                 link.addEventListener('click', (e) => {
                     e.preventDefault();
                     const targetId = link.getAttribute('href');
                     const target = document.querySelector(targetId);
-                    gsap.to(window, { 
-                        duration: 1, 
-                        scrollTo: { y: target, offsetY: 100 }, // टाइटल के लिए जगह
-                        ease: 'power2.out' 
-                    });
+                    gsap.to(window, { duration: 1, scrollTo: { y: target, offsetY: 100 }, ease: 'power2.out' });
                 });
             });
         });
 
-        // Refresh ScrollTrigger on Load
         window.addEventListener('load', () => {
             ScrollTrigger.refresh();
         });
