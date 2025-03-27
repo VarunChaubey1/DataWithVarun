@@ -10,25 +10,29 @@
     <meta name="robots" content="index, follow">
     <meta property="og:title" content="Varun Chaubey - Data Analyst Portfolio">
     <meta property="og:description" content="Explore Varun Chaubey's data analyst portfolio featuring Power BI, SQL, Python, and Power Apps projects for actionable insights.">
-    <meta property="og:image" content="https://analystvarun.com/varun-photo.jpg">
+    <meta property="og:image" content="https://analystvarun.com/images/varun-photo.webp">
     <meta property="og:url" content="https://analystvarun.com/">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Varun Chaubey - Data Analyst Portfolio">
     <meta name="twitter:description" content="Data analyst portfolio of Varun Chaubey showcasing expertise in Power BI, SQL, Python, and Power Apps projects.">
-    <meta name="twitter:image" content="https://analystvarun.com/varun-photo.jpg">
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta name="twitter:image" content="https://analystvarun.com/images/varun-photo.webp">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;700&display=swap" as="style">
+    <link rel="preload" href="styles.css" as="style">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="canonical" href="https://analystvarun.com/">
 </head>
 <body>
-    <!-- Gradient Definition for Progress Bars -->
+    <!-- Gradient for Progress Bars -->
     <svg style="position: absolute; width: 0; height: 0;">
         <defs>
             <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" style="stop-color:#d4af37;" />
+                <stop offset="0%" style="stop-color:#ffd700;" />
                 <stop offset="100%" style="stop-color:#1a2b5e;" />
             </linearGradient>
         </defs>
@@ -52,7 +56,7 @@
         </div>
     </nav>
 
-    <!-- Reach Out Button (Linked to Phone) -->
+    <!-- Reach Out Button -->
     <a href="tel:+919473733774" class="reach-out-btn">Reach Out</a>
 
     <!-- Home Section -->
@@ -68,7 +72,7 @@
                 </div>
             </div>
             <div class="hero-visual">
-                <img src="varun-photo.jpg" alt="Varun Chaubey - Data Analyst" class="profile-photo" loading="lazy">
+                <img src="images/varun-photo.webp" alt="Varun Chaubey - Data Analyst" class="profile-photo" loading="lazy" decoding="async">
             </div>
         </div>
     </section>
@@ -198,59 +202,59 @@
         <h2 class="section-title">Certifications</h2>
         <div class="cert-grid">
             <div class="cert-card">
-                <img src="google-analyst-thumbnail.jpg" alt="Google Data Analyst Certification" loading="lazy">
+                <img src="images/google-analyst-thumbnail.webp" alt="Google Data Analyst Certification" loading="lazy" decoding="async">
                 <h3>Google Data Analyst</h3>
                 <a href="https://skillshop.credential.net/675fb475-adcf-40eb-a0dc-900c45d6bec4#acc.aqnY9oMy" target="_blank" class="btn">View</a>
             </div>
             <div class="cert-card">
-                <img src="powerbi-masterclass-thumbnail.jpg" alt="Power BI Master Class Certification" loading="lazy">
+                <img src="images/powerbi-masterclass-thumbnail.webp" alt="Power BI Master Class Certification" loading="lazy" decoding="async">
                 <h3>Power BI Master Class</h3>
                 <a href="https://drive.google.com/file/d/1brUVNXedj6sE9QWaFm1Znv36HJojIgii/view?usp=sharing" target="_blank" class="btn">View</a>
             </div>
             <div class="cert-card">
-                <img src="sql-cert-thumbnail.jpg" alt="SQL Certification" loading="lazy">
+                <img src="images/sql-cert-thumbnail.webp" alt="SQL Certification" loading="lazy" decoding="async">
                 <h3>SQL</h3>
                 <a href="https://example.com/sql-cert" target="_blank" class="btn">View</a>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section ("Launch" changed to "View") -->
+    <!-- Projects Section -->
     <section id="projects" class="section">
         <h2 class="section-title">Projects</h2>
         <div class="project-grid">
             <div class="project-card">
-                <img src="ola-thumbnail.jpg" alt="OLA Ride Analysis Dashboard" loading="lazy">
+                <img src="images/ola-thumbnail.webp" alt="OLA Ride Analysis Dashboard" loading="lazy" decoding="async">
                 <h3>OLA Ride Analysis</h3>
                 <p>Power BI dashboard to optimize ride operations with data visualization.</p>
                 <a href="https://app.powerbi.com/view?r=eyJrIjoiMDQzNDlmZjgtZjZjYi00M2UzLWI1ZDEtMmZjZDFkYTMxYWFhIiwidCI6ImYzMjM4N2U3LTY3NWMtNDZjNS05MTZjLWNlNTNiMzIwMzU0ZiIsImMiOjEwfQ%3D%3D" target="_blank" class="btn">View</a>
             </div>
             <div class="project-card">
-                <img src="blinkit-thumbnail.jpg" alt="Blinkit Delivery Dashboard" loading="lazy">
+                <img src="images/blinkit-thumbnail.webp" alt="Blinkit Delivery Dashboard" loading="lazy" decoding="async">
                 <h3>Blinkit Dashboard</h3>
                 <p>Real-time delivery insights using Power BI for business intelligence.</p>
                 <a href="https://app.powerbi.com/view?r=eyJrIjoiMjk0YWM1ZjctNWE5My00OWM2LTg1MjQtMTAwMDBkNmU0MDI5IiwidCI6ImYzMjM4N2U3LTY3NWMtNDZjNS05MTZjLWNlNTNiMzIwMzU0ZiIsImMiOjEwfQ%3D%3D" target="_blank" class="btn">View</a>
             </div>
             <div class="project-card">
-                <img src="zomato-thumbnail.jpg" alt="Zomato Restaurant Analysis" loading="lazy">
+                <img src="images/zomato-thumbnail.webp" alt="Zomato Restaurant Analysis" loading="lazy" decoding="async">
                 <h3>Zomato Analysis</h3>
                 <p>Restaurant trends visualized with SQL and Power BI dashboards.</p>
                 <a href="https://app.powerbi.com/view?r=eyJrIjoiMDBiMzA2NWItNjE5My00NWRmLWIxZmMtOThiMGRhNjJkZTY0IiwidCI6ImYzMjM4N2U3LTY3NWMtNDZjNS05MTZjLWNlNTNiMzIwMzU0ZiIsImMiOjEwfQ%3D%3D" target="_blank" class="btn">View</a>
             </div>
             <div class="project-card">
-                <img src="election-thumbnail.jpg" alt="Election Insights Dashboard" loading="lazy">
+                <img src="images/election-thumbnail.webp" alt="Election Insights Dashboard" loading="lazy" decoding="async">
                 <h3>Election Dashboard</h3>
                 <p>Election insights dashboard built with Power BI for data analysis.</p>
                 <a href="https://app.powerbi.com/view?r=eyJrIjoiZDgxYTcyNjQtNDI3Yi00OWJiLTlhZjgtYjIwOWFlZGY4Y2JhIiwidCI6ImYzMjM4N2U3LTY3NWMtNDZjNS05MTZjLWNlNTNiMzIwMzU0ZiIsImMiOjEwfQ%3D%3D" target="_blank" class="btn">View</a>
             </div>
             <div class="project-card">
-                <img src="atm-thumbnail.jpg" alt="ATM Transaction Analysis" loading="lazy">
+                <img src="images/atm-thumbnail.webp" alt="ATM Transaction Analysis" loading="lazy" decoding="async">
                 <h3>ATM Transaction Analysis</h3>
                 <p>ATM data analysis using Python and Power BI visualizations.</p>
                 <a href="https://app.powerbi.com/view?r=eyJrIjoiZGRlMDNkNjItZTg2Mi00ZjQyLTk5MjgtM2FmYTAwNWNhNTJjIiwidCI6ImYzMjM4N2U3LTY3NWMtNDZjNS05MTZjLWNlNTNiMzIwMzU0ZiIsImMiOjEwfQ%3D%3D" target="_blank" class="btn">View</a>
             </div>
             <div class="project-card">
-                <img src="ipl-thumbnail.jpg" alt="IPL Statistics Dashboard" loading="lazy">
+                <img src="images/ipl-thumbnail.webp" alt="IPL Statistics Dashboard" loading="lazy" decoding="async">
                 <h3>IPL Dashboard</h3>
                 <p>IPL stats dashboard created with Power BI for sports analytics.</p>
                 <a href="https://app.powerbi.com/view?r=eyJrIjoiZWYwZWIwMjgtZTE5YS00ZTEyLThhYjUtMDMyMjk0ZjY2YzRjIiwidCI6ImYzMjM4N2U3LTY3NWMtNDZjNS05MTZjLWNlNTNiMzIwMzU0ZiIsImMiOjEwfQ%3D%3D" target="_blank" class="btn">View</a>
@@ -258,7 +262,7 @@
         </div>
     </section>
 
-    <!-- Contact Section (Mobile Number Removed) -->
+    <!-- Contact Section -->
     <section id="contact" class="section contact-section">
         <h2 class="section-title">Let’s Connect</h2>
         <p class="contact-intro">Open to impactful data-driven collaborations. Let’s connect!</p>
@@ -286,87 +290,9 @@
     </footer>
 
     <!-- Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollToPlugin.min.js"></script>
-    <script>
-        gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
-
-        const hamburger = document.querySelector('.hamburger');
-        const navLinks = document.querySelector('.nav-links');
-        hamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-            hamburger.classList.toggle('open');
-        });
-
-        gsap.from('.navbar', { y: -100, duration: 1, ease: 'power3.out' });
-        gsap.from('.reach-out-btn', { opacity: 0, x: 50, duration: 1, delay: 0.5 });
-        gsap.from('.hero-content h1', { opacity: 0, x: -100, duration: 1, delay: 0.5 });
-        gsap.from('.tagline', { opacity: 0, x: -50, duration: 1, delay: 0.7 });
-        gsap.from('.intro-text', { opacity: 0, x: -30, duration: 1, delay: 0.9 });
-        gsap.from('.button-container', { opacity: 0, y: 50, duration: 1, delay: 1.1 });
-        gsap.from('.profile-photo', { opacity: 0, scale: 0, duration: 1.5, delay: 1.3, ease: 'back.out(1.7)' });
-
-        document.querySelectorAll('.progress-circle').forEach(circle => {
-            const percentage = circle.getAttribute('data-percentage');
-            const ring = circle.querySelector('.progress-ring__circle');
-            const circumference = 2 * Math.PI * 36;
-            ring.style.strokeDasharray = `${circumference} ${circumference}`;
-            ring.style.strokeDashoffset = circumference;
-            gsap.to(ring, {
-                strokeDashoffset: circumference - (percentage / 100) * circumference,
-                duration: 1.5,
-                ease: 'power2.out',
-                scrollTrigger: { trigger: circle, start: 'top 80%' }
-            });
-        });
-
-        gsap.utils.toArray('.section').forEach(section => {
-            const title = section.querySelector('.section-title');
-            gsap.from(title, {
-                opacity: 0,
-                y: 50,
-                duration: 1,
-                scrollTrigger: { trigger: section, start: 'top 80%' }
-            });
-            ScrollTrigger.create({
-                trigger: section,
-                start: 'top 80px',
-                end: 'bottom 80px',
-                onEnter: () => title.classList.add('active'),
-                onLeave: () => title.classList.remove('active'),
-                onEnterBack: () => title.classList.add('active'),
-                onLeaveBack: () => title.classList.remove('active')
-            });
-            gsap.from(section.querySelectorAll('.skill-card, .exp-card, .cert-card, .project-card, .contact-item'), {
-                opacity: 0,
-                y: 30,
-                duration: 1,
-                stagger: 0.2,
-                scrollTrigger: { trigger: section, start: 'top 80%' }
-            });
-        });
-
-        document.addEventListener('DOMContentLoaded', () => {
-            if (window.location.hash) {
-                const target = document.querySelector(window.location.hash);
-                if (target) {
-                    gsap.to(window, { duration: 1, scrollTo: { y: target, offsetY: 100 }, ease: 'power2.out' });
-                }
-            }
-            document.querySelectorAll('.nav-links a').forEach(link => {
-                link.addEventListener('click', (e) => {
-                    e.preventDefault();
-                    const targetId = link.getAttribute('href');
-                    const target = document.querySelector(targetId);
-                    gsap.to(window, { duration: 1, scrollTo: { y: target, offsetY: 100 }, ease: 'power2.out' });
-                });
-            });
-        });
-
-        window.addEventListener('load', () => {
-            ScrollTrigger.refresh();
-        });
-    </script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollToPlugin.min.js"></script>
+    <script defer src="script.js"></script>
 </body>
 </html>
