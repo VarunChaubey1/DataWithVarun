@@ -511,7 +511,7 @@ body {
     content: '';
     position: absolute;
     top: 0;
-    left#left: -100%;
+    left: -100%;
     width: 100%;
     height: 100%;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
@@ -691,17 +691,11 @@ footer p {
     }
 
     .hero-content {
-        flex-direction: column-reverse; /* इमेज ऊपर, टेक्स्ट नीचे */
+        flex-direction: column; /* मोबाइल में इमेज ऊपर और टेक्स्ट नीचे */
         align-items: center;
         text-align: center;
-        padding: 2rem 1rem;
+        padding: 1rem;
         gap: 2rem;
-    }
-
-    .hero-text {
-        width: 100%;
-        padding: 0;
-        text-align: center;
     }
 
     .hero-visual {
@@ -709,6 +703,7 @@ footer p {
         max-width: 300px;
         height: auto;
         margin-bottom: 1.5rem;
+        order: -1; /* इमेज को ऊपर ले जाने के लिए */
     }
 
     .profile-photo {
@@ -723,6 +718,12 @@ footer p {
         height: 85vw;
         max-width: 300px;
         max-height: 300px;
+    }
+
+    .hero-text {
+        width: 100%;
+        padding: 0;
+        text-align: center;
     }
 
     .button-container {
