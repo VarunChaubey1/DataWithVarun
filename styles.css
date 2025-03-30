@@ -511,7 +511,7 @@ body {
     content: '';
     position: absolute;
     top: 0;
-    left: -100%;
+    left#left: -100%;
     width: 100%;
     height: 100%;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
@@ -691,7 +691,7 @@ footer p {
     }
 
     .hero-content {
-        flex-direction: column;
+        flex-direction: column-reverse; /* इमेज ऊपर, टेक्स्ट नीचे */
         align-items: center;
         text-align: center;
         padding: 2rem 1rem;
@@ -708,7 +708,7 @@ footer p {
         width: 100%;
         max-width: 300px;
         height: auto;
-        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
     }
 
     .profile-photo {
