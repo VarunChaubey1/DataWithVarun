@@ -737,7 +737,7 @@ footer p {
 
     .rotating-ring {
         width: 100%;
-        max-width: 300px;
+        max-width: 280px;
         height: auto;
         aspect-ratio: 1/1;
     }
@@ -802,7 +802,7 @@ footer p {
     }
 
     .cert-card {
-        max-width: 250px;
+        max-width: 280px;
         height: 280px;
         padding: 1rem;
         align-items: center;
@@ -821,7 +821,7 @@ footer p {
     }
 
     .project-card {
-        max-width: 250px;
+        max-width: 280px;
         height: 300px;
         padding: 1rem;
     }
