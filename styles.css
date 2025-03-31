@@ -164,6 +164,7 @@ body {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .btn {
@@ -345,7 +346,7 @@ body {
     border-left: 4px solid #D4AF37;
     transition: all 0.3s ease;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 1.5rem;
 }
 
@@ -417,6 +418,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     max-width: 300px;
     height: 320px;
     overflow: hidden;
@@ -481,7 +483,7 @@ body {
 
 .project-card img {
     width: 100%;
-    height: 200px;
+    max-height: 200px;
     object-fit: cover;
     border-radius: 8px;
     margin-bottom: 1rem;
@@ -513,6 +515,7 @@ body {
     box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
     width: 100%;
     max-width: 150px;
+    text-align: center;
 }
 
 .modern-btn::before {
@@ -700,7 +703,7 @@ footer p {
     }
 
     .hero {
-        padding: 4rem 1rem 2rem;
+        padding: 4.5rem 1rem 2rem; /* Adjusted padding-top for slight space from header */
         min-height: auto;
     }
 
@@ -773,7 +776,7 @@ footer p {
 
     .exp-card {
         flex-direction: row;
-        align-items: center;
+        align-items: flex-start; /* Image moved slightly up */
         text-align: left;
         padding: 1.2rem;
     }
@@ -799,6 +802,7 @@ footer p {
         max-width: 250px;
         height: 280px;
         padding: 1rem;
+        align-items: center;
     }
 
     .cert-card img {
@@ -819,7 +823,7 @@ footer p {
     }
 
     .project-card img {
-        height: 160px;
+        max-height: 160px; /* Adjusted for mobile */
     }
 
     .contact-section {
@@ -896,6 +900,6 @@ footer p {
     }
 
     .project-card img {
-        height: 150px;
+        max-height: 150px; /* Adjusted for small screens */
     }
 }
