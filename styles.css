@@ -94,11 +94,11 @@ body {
 
 /* Sections */
 .section {
-    padding: 5rem 2rem;
+    padding: 4rem 2rem;
     text-align: center;
     background: #FFFFFF;
     border-radius: 20px;
-    margin: 2rem auto;
+    margin: 1.5rem auto;
     max-width: 1300px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
     border: 1px solid rgba(212, 175, 55, 0.15);
@@ -109,7 +109,7 @@ body {
 .hero {
     min-height: 100vh;
     background: #FFFFFF;
-    padding: 5rem clamp(1rem, 5vw, 2rem);
+    padding: 6rem clamp(1rem, 5vw, 2rem) 4rem;
     max-width: 1200px;
     margin: 0 auto;
     box-shadow: none;
@@ -124,7 +124,7 @@ body {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 3rem;
+    gap: 2rem;
     width: 100%;
 }
 
@@ -162,12 +162,12 @@ body {
 
 .button-container {
     display: flex;
-    gap: 1.2rem;
+    gap: 1rem;
     flex-wrap: wrap;
 }
 
 .btn {
-    padding: clamp(0.7rem, 1.5vw, 0.9rem) clamp(1.4rem, 2.5vw, 1.8rem);
+    padding: 0.7rem 1.5rem;
     border-radius: 25px;
     text-decoration: none;
     font-weight: 600;
@@ -180,6 +180,9 @@ body {
     letter-spacing: 0.5px;
     position: relative;
     overflow: hidden;
+    white-space: nowrap;
+    min-width: 140px;
+    text-align: center;
 }
 
 .btn::before {
@@ -342,7 +345,7 @@ body {
     border-left: 4px solid #D4AF37;
     transition: all 0.3s ease;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     gap: 1.5rem;
 }
 
@@ -357,6 +360,7 @@ body {
     object-fit: contain;
     border-radius: 6px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
 }
 
 .exp-content {
@@ -401,6 +405,7 @@ body {
     gap: 2rem;
     max-width: 1200px;
     margin: 0 auto;
+    justify-content: center;
 }
 
 .cert-card {
@@ -453,6 +458,7 @@ body {
     gap: 2rem;
     max-width: 1200px;
     margin: 0 auto;
+    justify-content: center;
 }
 
 .project-card {
@@ -694,7 +700,7 @@ footer p {
     }
 
     .hero {
-        padding: 2rem 1rem;
+        padding: 4rem 1rem 2rem;
         min-height: auto;
     }
 
@@ -741,6 +747,11 @@ footer p {
         justify-content: center;
     }
 
+    .btn {
+        padding: 0.6rem 1.2rem;
+        min-width: 120px;
+    }
+
     .skills-grid {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
         gap: 1rem;
@@ -761,16 +772,16 @@ footer p {
     }
 
     .exp-card {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
-        text-align: center;
+        text-align: left;
         padding: 1.2rem;
     }
 
     .company-logo {
         width: 50px;
         height: 50px;
-        margin-bottom: 1rem;
+        margin-bottom: 0;
     }
 
     .exp-content {
@@ -781,6 +792,7 @@ footer p {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         gap: 1.5rem;
         padding: 0 1rem;
+        justify-content: center;
     }
 
     .cert-card {
@@ -797,6 +809,7 @@ footer p {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         gap: 1.5rem;
         padding: 0 1rem;
+        justify-content: center;
     }
 
     .project-card {
@@ -839,10 +852,10 @@ footer p {
         font-size: 0.9rem;
     }
 
-    .btn, .modern-btn {
-        padding: 0.4rem 1rem;
+    .btn {
+        padding: 0.5rem 1rem;
         font-size: 0.85rem;
-        max-width: 120px;
+        min-width: 110px;
     }
 
     .skill-card {
@@ -855,6 +868,14 @@ footer p {
     }
 
     .progress-percentage {
+        font-size: 0.9rem;
+    }
+
+    .exp-card h3 {
+        font-size: 1.4rem;
+    }
+
+    .exp-card ul li {
         font-size: 0.9rem;
     }
 
