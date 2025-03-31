@@ -207,8 +207,8 @@ body {
     flex: 1;
     position: relative;
     min-width: 280px;
-    width: clamp(280px, 48vw, 480px);
-    height: clamp(280px, 48vw, 480px);
+    max-width: 480px;
+    height: 480px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -221,10 +221,6 @@ body {
     object-fit: cover;
     border: 4px solid rgba(212, 175, 55, 0.3);
     box-shadow: 0 8px 30px rgba(212, 175, 55, 0.3);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     z-index: 2;
 }
 
@@ -416,6 +412,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    max-width: 300px;
     height: 320px;
     overflow: hidden;
 }
@@ -446,6 +443,7 @@ body {
     font-size: 1.1rem;
     color: #1A2B5E;
     margin: 0;
+    text-align: center;
 }
 
 /* Projects Section */
@@ -466,6 +464,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 320px;
     height: 340px;
 }
 
@@ -487,11 +486,12 @@ body {
     font-size: 1.2rem;
     color: #1A2B5E;
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 /* Unified Button Styling for Certificates & Projects */
 .modern-btn {
-    padding: 0.6rem 1.6rem;
+    padding: 0.6rem 1.2rem;
     border-radius: 25px;
     background: linear-gradient(135deg, #D4AF37 0%, #1A2B5E 100%);
     color: #fff;
@@ -505,6 +505,8 @@ body {
     overflow: hidden;
     border: none;
     box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+    width: 100%;
+    max-width: 150px;
 }
 
 .modern-btn::before {
@@ -686,38 +688,47 @@ footer p {
         font-size: 0.75rem;
     }
 
-    .hero {
+    .section {
         padding: 3rem 1rem;
+        margin: 1rem auto;
+    }
+
+    .hero {
+        padding: 2rem 1rem;
+        min-height: auto;
     }
 
     .hero-content {
-        flex-direction: column; /* मोबाइल में इमेज ऊपर और टेक्स्ट नीचे */
+        flex-direction: column;
         align-items: center;
         text-align: center;
-        padding: 1rem;
-        gap: 2rem;
+        padding: 0;
+        gap: 1.5rem;
     }
 
     .hero-visual {
+        position: relative;
         width: 100%;
         max-width: 300px;
         height: auto;
-        margin-bottom: 1.5rem;
-        order: -1; /* इमेज को ऊपर ले जाने के लिए */
+        margin-bottom: 1rem;
+        order: -1;
     }
 
     .profile-photo {
-        width: 70vw;
-        height: 70vw;
+        position: static;
+        transform: none;
+        width: 100%;
         max-width: 250px;
-        max-height: 250px;
+        height: auto;
+        aspect-ratio: 1/1;
     }
 
     .rotating-ring {
-        width: 85vw;
-        height: 85vw;
+        width: 100%;
         max-width: 300px;
-        max-height: 300px;
+        height: auto;
+        aspect-ratio: 1/1;
     }
 
     .hero-text {
@@ -766,19 +777,36 @@ footer p {
         width: 100%;
     }
 
-    .cert-grid, .project-grid {
+    .cert-grid {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         gap: 1.5rem;
         padding: 0 1rem;
     }
 
-    .cert-card, .project-card {
-        height: auto;
+    .cert-card {
+        max-width: 250px;
+        height: 280px;
         padding: 1rem;
     }
 
-    .cert-card img, .project-card img {
-        height: 120px;
+    .cert-card img {
+        height: 150px;
+    }
+
+    .project-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1.5rem;
+        padding: 0 1rem;
+    }
+
+    .project-card {
+        max-width: 250px;
+        height: 300px;
+        padding: 1rem;
+    }
+
+    .project-card img {
+        height: 160px;
     }
 
     .contact-section {
@@ -812,8 +840,9 @@ footer p {
     }
 
     .btn, .modern-btn {
-        width: 100%;
         padding: 0.4rem 1rem;
+        font-size: 0.85rem;
+        max-width: 120px;
     }
 
     .skill-card {
@@ -830,26 +859,22 @@ footer p {
     }
 
     .cert-card {
-        height: auto;
+        height: 260px;
     }
 
     .cert-card img {
-        height: 120px;
+        height: 140px;
     }
 
     .cert-card h3 {
         font-size: 1rem;
     }
 
-    .modern-btn {
-        font-size: 0.75rem;
-    }
-
     .project-card {
-        height: auto;
+        height: 280px;
     }
 
     .project-card img {
-        height: 120px;
+        height: 150px;
     }
 }
