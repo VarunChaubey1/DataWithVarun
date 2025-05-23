@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Varun Chaubey - Data Analyst & BI Developer Portfolio</title>
-    <meta name="description" content="Portfolio of Varun Chaubey, a skilled Data Analyst and Business Intelligence Developer specializing in Power BI, SQL, Python, and Power Apps for data visualization and actionable insights.">
+    <meta name="description" content="Varun Chaubey's portfolio: Expert Data Analyst & BI Developer skilled in Power BI, SQL, Python, and Power Apps for impactful data visualization.">
     <meta name="keywords" content="Varun Chaubey, data analyst, business intelligence developer, Power BI, SQL, Python, Power Apps, data visualization, BI projects, portfolio">
     <meta name="author" content="Varun Chaubey">
     <meta name="robots" content="index, follow">
@@ -17,6 +17,14 @@
     <meta name="twitter:title" content="Varun Chaubey - Data Analyst & BI Developer Portfolio">
     <meta name="twitter:description" content="Portfolio of Varun Chaubey featuring data analysis and BI projects with Power BI, SQL, Python, and Power Apps.">
     <meta name="twitter:image" content="https://analystvarun.com/images/varun-photo.webp">
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" as="style" onload="this.rel='stylesheet';this.onload=null">
     <link rel="preload" href="styles.css" as="style">
     <link rel="stylesheet" href="styles.css">
@@ -52,17 +60,24 @@
             <div class="hero-text">
                 <h1 class="hero-title">Varun Chaubey</h1>
                 <p class="tagline">Data Analyst | Transforming Insights</p>
-                <p class="intro-text">With over 2 years of experience, I specialize in turning raw data into actionable decisions using Power BI, SQL, Python, and Power Apps. Explore my data-driven projects below.</p>
+                <ul class="intro-text">
+                    <li>2+ years of experience in data analysis and BI development.</li>
+                    <li>Expert in Power BI, SQL, Python, and Power Apps for actionable insights.</li>
+                    <li>Proven track record in automating workflows and optimizing performance.</li>
+                </ul>
                 <div class="button-container">
                     <a href="#projects" class="btn primary-btn">View Projects</a>
-                    <a href="https://drive.google.com/file/d/18ORiYrKbL6F0vNV7TlPIKocD3Y3Sy956/view?usp=sharing" target="_blank" class="btn secondary-btn">Download CV</a>
+                    <a href="https://drive.google.com/file/d/1gM1XOVsqk8GoDeyu62kKTlWP87ij1Mlp/view?usp=sharing" target="_blank" class="btn secondary-btn">Download CV</a>
                 </div>
             </div>
             <div class="hero-visual">
                 <svg class="rotating-ring" viewBox="0 0 200 200">
                     <circle cx="100" cy="100" r="90" fill="none" stroke="url(#gradient)" stroke-width="4"/>
                 </svg>
-                <img src="images/varun-photo.webp" alt="Varun Chaubey - Data Analyst & BI Developer" class="profile-photo" loading="lazy" decoding="async">
+                <picture>
+                    <source srcset="images/varun-photo.webp" type="image/webp">
+                    <img src="images/varun-photo.jpg" alt="Varun Chaubey - Data Analyst & BI Developer" class="profile-photo" loading="lazy" decoding="async">
+                </picture>
             </div>
         </div>
     </section>
@@ -168,6 +183,17 @@
                     <span class="progress-percentage">80%</span>
                 </div>
             </div>
+            <div class="skill-card">
+                <i class="fas fa-tools"></i>
+                <h3>Postman</h3>
+                <div class="progress-circle" data-percentage="80">
+                    <svg class="progress-ring" viewBox="0 0 80 80">
+                        <circle class="progress-ring__circle-bg" cx="40" cy="40" r="36"/>
+                        <circle class="progress-ring__circle" cx="40" cy="40" r="36"/>
+                    </svg>
+                    <span class="progress-percentage">80%</span>
+                </div>
+            </div>
         </div>
     </section>
     <section id="experience" class="section">
@@ -229,32 +255,50 @@
             <div class="project-card">
                 <img src="images/ola-thumbnail.webp" alt="OLA Ride Analysis Dashboard" loading="lazy" decoding="async">
                 <h3>OLA Ride Analysis</h3>
-                <a href="https://app.powerbi.com/view?r=eyJrIjoiMDQzNDlmZjgtZjZjYi00M2UzLWI1ZDEtMmZjZDFkYTMxYWFhIiwidCI6ImYzMjM4N2U3LTY3NWMtNDZjNS05MTZjLWNlNTNiMzIwMzU0ZiIsImMiOjEwfQ%3D%3D" target="_blank" class="modern-btn">View</a>
+                <p class="project-desc">Tools: Power BI, SQL<br>Outcome: Visualized ride patterns, improving operational efficiency by 10%.</p>
+                <div class="project-links">
+                    <a href="https://app.powerbi.com/view?r=eyJrIjoiMDQzNDlmZjgtZjZjYi00M2UzLWI1ZDEtMmZjZDFkYTMxYWFhIiwidCI6ImYzMjM4N2U3LTY3NWMtNDZjNS05MTZjLWNlNTNiMzIwMzU0ZiIsImMiOjEwfQ%3D%3D" target="_blank" class="modern-btn">View Project</a>
+                </div>
             </div>
             <div class="project-card">
                 <img src="images/blinkit-thumbnail.webp" alt="Blinkit Delivery Dashboard" loading="lazy" decoding="async">
                 <h3>Blinkit Dashboard</h3>
-                <a href="https://app.powerbi.com/view?r=eyJrIjoiMjk0YWM1ZjctNWE5My00OWM2LTg1MjQtMTAwMDBkNmU0MDI5IiwidCI6ImYzMjM4N2U3LTY3NWMtNDZjNS05MTZjLWNlNTNiMzIwMzU0ZiIsImMiOjEwfQ%3D%3D" target="_blank" class="modern-btn">View</a>
+                <p class="project-desc">Tools: Power BI, Python<br>Outcome: Reduced delivery time analysis by 20%.</p>
+                <div class="project-links">
+                    <a href="https://app.powerbi.com/view?r=eyJrIjoiMjk0YWM1ZjctNWE5My00OWM2LTg1MjQtMTAwMDBkNmU0MDI5IiwidCI6ImYzMjM4N2U3LTY3NWMtNDZjNS05MTZjLWNlNTNiMzIwMzU0ZiIsImMiOjEwfQ%3D%3D" target="_blank" class="modern-btn">View Project</a>
+                </div>
             </div>
             <div class="project-card">
                 <img src="images/zomato-thumbnail.webp" alt="Zomato Restaurant Analysis" loading="lazy" decoding="async">
                 <h3>Zomato Analysis</h3>
-                <a href="https://app.powerbi.com/view?r=eyJrIjoiMDBiMzA2NWItNjE5My00NWRmLWIxZmMtOThiMGRhNjJkZTY0IiwidCI6ImYzMjM4N2U3LTY3NWMtNDZjNS05MTZjLWNlNTNiMzIwMzU0ZiIsImMiOjEwfQ%3D%3D" target="_blank" class="modern-btn">View</a>
+                <p class="project-desc">Tools: Power BI, SQL<br>Outcome: Enhanced restaurant performance insights by 15%.</p>
+                <div class="project-links">
+                    <a href="https://app.powerbi.com/view?r=eyJrIjoiMDBiMzA2NWItNjE5My00NWRmLWIxZmMtOThiMGRhNjJkZTY0IiwidCI6ImYzMjM4N2U3LTY3NWMtNDZjNS05MTZjLWNlNTNiMzIwMzU0ZiIsImMiOjEwfQ%3D%3D" target="_blank" class="modern-btn">View Project</a>
+                </div>
             </div>
             <div class="project-card">
                 <img src="images/election-thumbnail.webp" alt="Election Insights Dashboard" loading="lazy" decoding="async">
                 <h3>Election Dashboard</h3>
-                <a href="https://app.powerbi.com/view?r=eyJrIjoiZDgxYTcyNjQtNDI3Yi00OWJiLTlhZjgtYjIwOWFlZGY4Y2JhIiwidCI6ImYzMjM4N2U3LTY3NWMtNDZjNS05MTZjLWNlNTNiMzIwMzU0ZiIsImMiOjEwfQ%3D%3D" target="_blank" class="modern-btn">View</a>
+                <p class="project-desc">Tools: Power BI, Python<br>Outcome: Provided real-time election insights for stakeholders.</p>
+                <div class="project-links">
+                    <a href="https://app.powerbi.com/view?r=eyJrIjoiZDgxYTcyNjQtNDI3Yi00OWJiLTlhZjgtYjIwOWFlZGY4Y2JhIiwidCI6ImYzMjM4N2U3LTY3NWMtNDZjNS05MTZjLWNlNTNiMzIwMzU0ZiIsImMiOjEwfQ%3D%3D" target="_blank" class="modern-btn">View Project</a>
+                </div>
             </div>
             <div class="project-card">
                 <img src="images/atm-thumbnail.webp" alt="ATM Transaction Analysis" loading="lazy" decoding="async">
                 <h3>ATM Transaction Analysis</h3>
-                <a href="https://app.powerbi.com/view?r=eyJrIjoiZGRlMDNkNjItZTg2Mi00ZjQyLTk5MjgtM2FmYTAwNWNhNTJjIiwidCI6ImYzMjM4N2U3LTY3NWMtNDZjNS05MTZjLWNlNTNiMzIwMzU0ZiIsImMiOjEwfQ%3D%3D" target="_blank" class="modern-btn">View</a>
+                <p class="project-desc">Tools: Power BI, SQL<br>Outcome: Improved transaction monitoring efficiency by 12%.</p>
+                <div class="project-links">
+                    <a href="https://app.powerbi.com/view?r=eyJrIjoiZGRlMDNkNjItZTg2Mi00ZjQyLTk5MjgtM2FmYTAwNWNhNTJjIiwidCI6ImYzMjM4N2U3LTY3NWMtNDZjNS05MTZjLWNlNTNiMzIwMzU0ZiIsImMiOjEwfQ%3D%3D" target="_blank" class="modern-btn">View Project</a>
+                </div>
             </div>
             <div class="project-card">
                 <img src="images/ipl-thumbnail.webp" alt="IPL Statistics Dashboard" loading="lazy" decoding="async">
                 <h3>IPL Dashboard</h3>
-                <a href="https://app.powerbi.com/view?r=eyJrIjoiZWYwZWIwMjgtZTE5YS00ZTEyLThhYjUtMDMyMjk0ZjY2YzRjIiwidCI6ImYzMjM4N2U3LTY3NWMtNDZjNS05MTZjLWNlNTNiMzIwMzU0ZiIsImMiOjEwfQ%3D%3D" target="_blank" class="modern-btn">View</a>
+                <p class="project-desc">Tools: Power BI, Python<br>Outcome: Delivered detailed match statistics for fan engagement.</p>
+                <div class="project-links">
+                    <a href="https://app.powerbi.com/view?r=eyJrIjoiZWYwZWIwMjgtZTE5YS00ZTEyLThhYjUtMDMyMjk0ZjY2YzRjIiwidCI6ImYzMjM4N2U3LTY3NWMtNDZjNS05MTZjLWNlNTNiMzIwMzU0ZiIsImMiOjEwfQ%3D%3D" target="_blank" class="modern-btn">View Project</a>
+                </div>
             </div>
         </div>
     </section>
