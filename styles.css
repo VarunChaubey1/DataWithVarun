@@ -46,7 +46,23 @@ body {
     text-decoration: none;
     font-weight: 500;
     font-size: clamp(0.9rem, 2vw, 1rem);
+    position: relative;
     transition: color 0.3s ease;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #D4AF37;
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
 }
 
 .nav-links a:hover {
@@ -147,17 +163,34 @@ body {
 }
 
 .tagline {
-    font-size: clamp(1.1rem, 3vw, 1.6rem);
+    font-size: clamp(1.2rem, 3.5vw, 1.8rem);
     color: #D4AF37;
-    font-weight: 400;
-    margin-top: 0.5rem;
+    font-weight: 500;
+    margin-top: 0.8rem;
 }
 
 .intro-text {
-    font-size: clamp(0.95rem, 2.5vw, 1.2rem);
-    color: #333;
+    font-size: clamp(0.95rem, 2.5vw, 1.1rem);
+    color: #222;
     margin: 1.2rem 0 2rem;
     max-width: 600px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    list-style: none;
+}
+
+.intro-text li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin: 0.5rem 0;
+}
+
+.intro-text li::before {
+    content: '➤';
+    color: #D4AF37;
+    position: absolute;
+    left: 0;
 }
 
 .button-container {
@@ -207,6 +240,18 @@ body {
     box-shadow: 0 6px 20px rgba(212, 175, 55, 0.5);
 }
 
+.secondary-btn {
+    background: linear-gradient(135deg, #1A2B5E 0%, #D4AF37 100%);
+    color: #fff;
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+}
+
+.secondary-btn:hover {
+    background: linear-gradient(135deg, #D4AF37 0%, #1A2B5E 100%);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(212, 175, 55, 0.5);
+}
+
 .hero-visual {
     flex: 1;
     position: relative;
@@ -223,8 +268,8 @@ body {
     height: clamp(200px, 36vw, 360px);
     border-radius: 50%;
     object-fit: cover;
-    border: 4px solid rgba(212, 175, 55, 0.3);
-    box-shadow: 0 8px 30px rgba(212, 175, 55, 0.3);
+    border: 6px solid rgba(212, 175, 55, 0.4);
+    box-shadow: 0 10px 35px rgba(212, 175, 55, 0.4);
     z-index: 2;
 }
 
@@ -285,6 +330,10 @@ body {
     font-size: 2.5rem;
     color: #1A2B5E;
     margin-bottom: 0.8rem;
+}
+
+.skill-card i.fa-tools {
+    font-size: 2.5rem;
 }
 
 .skill-card h3 {
@@ -420,8 +469,8 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    max-width: 320px; /* Matched with project-card */
-    height: 340px; /* Matched with project-card */
+    max-width: 320px;
+    height: 340px;
     overflow: hidden;
 }
 
@@ -433,11 +482,12 @@ body {
 .cert-card img {
     width: 100%;
     height: auto;
-    max-height: 230px; /* Matched with project-card */
+    max-height: 230px;
     object-fit: cover;
     border-radius: 8px;
     margin-bottom: 1rem;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
+    border: 2px solid #D4AF37;
 }
 
 .cert-content {
@@ -446,7 +496,7 @@ body {
     align-items: center;
     gap: 0.8rem;
     padding-top: 0.5rem;
-    margin-top: 0.5rem; /* Matched spacing with project-card */
+    margin-top: 0.5rem;
 }
 
 .cert-card h3 {
@@ -478,7 +528,7 @@ body {
     justify-content: space-between;
     align-items: center;
     max-width: 320px;
-    height: 340px;
+    height: 380px;
 }
 
 .project-card:hover {
@@ -503,13 +553,14 @@ body {
     text-align: center;
 }
 
-.project-card .modern-btn {
-    margin-top: 0.5rem;
+.project-links {
+    display: flex;
+    justify-content: center;
 }
 
 /* Unified Button Styling for Certificates & Projects */
 .modern-btn {
-    padding: 0.35rem 0.7rem;
+    padding: 0.25rem 1.2rem;
     border-radius: 25px;
     background: linear-gradient(135deg, #D4AF37 0%, #1A2B5E 100%);
     color: #fff;
@@ -524,9 +575,10 @@ body {
     border: none;
     box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
     width: 100%;
-    min-width: 130px;
-    max-width: 130px;
+    min-width: 160px;
+    max-width: 160px;
     text-align: center;
+    white-space: nowrap;
 }
 
 .modern-btn::before {
@@ -661,6 +713,14 @@ footer p {
     to { transform: translate(-50%, -50%) rotate(360deg); }
 }
 
+/* Project Description */
+.project-desc {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
 /* Media Queries for Mobile Responsiveness */
 @media (max-width: 768px) {
     .navbar {
@@ -669,6 +729,7 @@ footer p {
 
     .hamburger {
         display: flex;
+        z-index: 1001;
     }
 
     .nav-links {
@@ -680,10 +741,13 @@ footer p {
         width: 100%;
         background: #1A2B5E;
         padding: 1.2rem 0;
+        transition: transform 0.3s ease-in-out;
+        transform: translateY(-100%);
     }
 
     .nav-links.active {
         display: flex;
+        transform: translateY(0);
     }
 
     .nav-links li {
@@ -714,7 +778,7 @@ footer p {
     }
 
     .hero {
-        padding: 4.5rem 1rem 2rem;
+        padding: 3rem 1rem;
         min-height: auto;
     }
 
@@ -758,6 +822,18 @@ footer p {
         text-align: center;
     }
 
+    .hero-title {
+        font-size: clamp(1.8rem, 5vw, 2.5rem);
+    }
+
+    .tagline {
+        font-size: clamp(0.9rem, 2.5vw, 1.2rem);
+    }
+
+    .intro-text {
+        font-size: clamp(0.85rem, 2vw, 1rem);
+    }
+
     .button-container {
         justify-content: center;
     }
@@ -768,13 +844,14 @@ footer p {
     }
 
     .skills-grid {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        grid-template-columns: 1fr;
         gap: 1rem;
         padding: 0 1rem;
     }
 
     .skill-card {
         padding: 1rem;
+        max-width: 100%;
     }
 
     .progress-circle {
@@ -804,7 +881,7 @@ footer p {
     }
 
     .cert-grid {
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        grid-template-columns: 1fr;
         gap: 1.5rem;
         padding: 0 1rem;
         justify-content: center;
@@ -812,8 +889,8 @@ footer p {
     }
 
     .cert-card {
-        max-width: 280px; /* Matched with project-card */
-        height: 360px; /* Matched with project-card */
+        max-width: 280px;
+        height: 360px;
         padding: 1rem;
         display: flex;
         flex-direction: column;
@@ -822,12 +899,12 @@ footer p {
     }
 
     .cert-card img {
-        max-height: 190px; /* Matched with project-card */
+        max-height: 190px;
         height: auto;
     }
 
     .project-grid {
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        grid-template-columns: 1fr;
         gap: 1.5rem;
         padding: 0 1rem;
         justify-content: center;
@@ -836,7 +913,7 @@ footer p {
 
     .project-card {
         max-width: 280px;
-        height: 360px;
+        height: 340px;
         padding: 1rem;
         display: flex;
         flex-direction: column;
@@ -850,45 +927,10 @@ footer p {
     }
 
     .modern-btn {
-        padding: 0.35rem 0.7rem;
-        border-radius: 25px;
-        background: linear-gradient(135deg, #D4AF37 0%, #1A2B5E 100%);
-        color: #fff;
-        font-weight: 600;
-        font-size: 0.95rem;
-        text-decoration: none;
-        text-transform: uppercase;
-        letter-spacing: 0.5px;
-        transition: all 0.3s ease;
-        position: relative;
-        overflow: hidden;
-        border: none;
-        box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
-        width: 100%;
-        min-width: 130px;
-        max-width: 130px;
-        text-align: center;
-    }
-
-    .modern-btn::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: -100%;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
-        transition: all 0.4s ease;
-    }
-
-    .modern-btn:hover::before {
-        left: 100%;
-    }
-
-    .modern-btn:hover {
-        background: linear-gradient(135deg, #1A2B5E 0%, #D4AF37 100%);
-        transform: translateY(-3px);
-        box-shadow: 0 6px 20px rgba(212, 175, 55, 0.5);
+        padding: 0.2rem 1rem;
+        font-size: 0.9rem;
+        min-width: 140px;
+        max-width: 140px;
     }
 
     .contact-section {
@@ -914,16 +956,16 @@ footer p {
 
 @media (max-width: 480px) {
     .hero-title {
-        font-size: 1.8rem;
+        font-size: clamp(1.5rem, 4vw, 2rem);
     }
 
     .tagline {
-        font-size: 0.9rem;
+        font-size: clamp(0.9rem, 2.5vw, 1.2rem);
     }
 
     .btn {
         padding: 0.5rem 1rem;
-        font-size: 0.85rem;
+        font-size: 0.8rem;
         min-width: 110px;
     }
 
@@ -949,11 +991,11 @@ footer p {
     }
 
     .cert-card {
-        height: 310px; /* Matched with project-card */
+        height: 310px;
     }
 
     .cert-card img {
-        max-height: 180px; /* Matched with project-card */
+        max-height: 180px;
     }
 
     .project-card {
@@ -962,6 +1004,13 @@ footer p {
 
     .project-card img {
         max-height: 180px;
+    }
+
+    .modern-btn {
+        padding: 0.15rem 0.8rem;
+        font-size: 0.85rem;
+        min-width: 130px;
+        max-width: 130px;
     }
 }
 
